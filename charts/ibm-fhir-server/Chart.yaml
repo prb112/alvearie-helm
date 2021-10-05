@@ -5,7 +5,7 @@ version: 0.4.0
 appVersion: 4.9.2
 dependencies:
   - name: postgresql
-    version: 10.12.0
+    version: 10.12.2
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
@@ -25,3 +25,5 @@ annotations:
     # added, changed, deprecated, removed, fixed, and security.
     - kind: changed
       description: align endpoints config with fhir-server-config.json's fhirServer/resources section
+    - kind: changed
+      description: updated to version 10.12.2 of the embedded bitnami postgresql chart
