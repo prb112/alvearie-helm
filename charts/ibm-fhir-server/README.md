@@ -173,6 +173,7 @@ If the `objectStorage.objectStorageSecret` value is set, this helm chart will on
 | endpoints.Resource.searchIncludes | list | `nil` | Valid _include arguments while searching this resource type; nil means no restrictions |
 | endpoints.Resource.searchParameters | object | `{"*":"*"}` | A mapping from enabled search parameter codes to search parameter definitions |
 | endpoints.Resource.searchRevIncludes | list | `nil` | Valid _revInclude arguments while searching this resource type; nil means no restrictions |
+| exposeHttpEndpoint | bool | `false` | if enabled, the server will listen to non-TLS requests |
 | extensionSearchParametersTemplate | string | `"defaultSearchParameters"` | Template containing the extension-search-parameters.json content |
 | extraEnv | string | `""` |  |
 | extraJvmOptions | string | `""` |  |
